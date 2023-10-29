@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+img {
+    border: 1px solid #000000;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    border-radius: 4px;
+    padding: 5px;
+    /*filter: blur(4px);*/
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(222, 57, 57, 0.5);
+}
+
+.menu-body {
+    background-color: rgb(69, 98, 131);
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.game-body {
+    background-color: rgb(69, 98, 131);
+    height: 100vh;
+}
+
+:root {
+    --color-primary: #f6aca2;
+    --color-secondary: #f49b90;
+    --color-tertiary: #f28b7d;
+    --color-quaternary: #f07a6a;
+    --color-quinary: #ee6352;
+}
+
+.menu-header-content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.menu_header-text-shadows {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+        9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+    margin: 0;
+    color: var(--color-primary);
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+    0% {
+        text-shadow: none;
+    }
+
+    10% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+
+    20% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary);
+    }
+
+    30% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+
+    40% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+            12px 12px 0 var(--color-quinary);
+    }
+
+    50% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+            12px 12px 0 var(--color-quinary);
+    }
+
+    60% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+            12px 12px 0 var(--color-quinary);
+    }
+
+    70% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+
+    80% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary);
+    }
+
+    90% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    40% {
+        transform: translate(-12px, -12px);
+    }
+
+    50% {
+        transform: translate(-12px, -12px);
+    }
+
+    60% {
+        transform: translate(-12px, -12px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.score-table {
+    position: fixed;
+    width: 50%;
+    right: 0;
+    left: 0;
+    top: 25px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: rgb(120, 190, 255);
+}
+
+.player1 {
+    position: fixed;
+    left: 30%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: rgb(120, 190, 255);
+}
+
+.player2 {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: rgb(120, 190, 255);
+}
+
+.player3 {
+    position: fixed;
+    left: 70%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: rgb(120, 190, 255);
+}
+
+.meme-card {
+    position: fixed;
+    left: 50%;
+    top: 55%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+}
+
+.me {
+    position: fixed;
+    left: 50%;
+    bottom: -5%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: rgb(120, 190, 255);
+}
+
+.meme-input {
+    width: 350px;
+    height: 100px;
+    padding: 12px 20px;
+    border: 2px solid rgb(120, 190, 255);
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+}
+
+.meme-input-box {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.nft-market {
+    position: fixed;
+    height: 85%;
+    right: 25px;
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid rgb(120, 190, 255);
+    border-radius: 25px;
+    background-color: rgb(120, 190, 255);
+}
+
+.winner-table {
+    position: fixed;
+    height: 25%;
+    width: 150px;
+    left: 25px;
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid rgb(120, 190, 255);
+    border-radius: 25px;
+    background-color: rgb(120, 190, 255);
+}
+
+.voting-modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+}
+
+.voting-modal-container {
+    width: 50%;
+    top: 50%;
+    left: 50%;
+}
+
+.voting-modal {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+    color: white;
+    padding: 25px;
+}
+
+.create-game-modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 15;
+}
+
+.create-game-modal-container {
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 15;
+}
